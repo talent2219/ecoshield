@@ -1,0 +1,8 @@
+.action-btns { display: flex; gap: 6px; }
+.btn-approve { background: #f0fdf4; border: 1px solid #bbf7d0; color: #16a34a; border-radius: 6px; padding: 5px 8px; cursor: pointer; display: flex; align-items: center; }
+.btn-approve:hover { background: #dcfce7; }
+.btn-block { background: #fef2f2; border: 1px solid #fecaca; color: #dc2626; border-radius: 6px; padding: 5px 8px; cursor: pointer; display: flex; align-items: center; }
+.btn-block:hover { background: #fee2e2; }
+.status-completed { background: #f0fdf4; color: #16a34a; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+.status-flagged   { background: #fffbeb; color: #d97706; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+.status-blocked   { background: #fef2f2; color: #dc2626; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }

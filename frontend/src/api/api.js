@@ -1,0 +1,14 @@
+import axios from 'axios';
+const api = axios.create({ baseURL: 'http://localhost:5000/api' });
+export const login            = (phone, password) => api.post('/auth/login', { phone, password });
+export const register         = (data)  => api.post('/auth/register', data);
+export const getMe            = ()      => api.get('/auth/me');
+export const getTransactions  = (uid)   => api.get(`/transactions?userId=${uid}`);
+export const getStats         = ()      => api.get('/transactions/stats');
+export const getAlerts        = (uid)   => api.get(`/alerts?userId=${uid}`);
+export const markAlertRead    = (id)    => api.patch(`/alerts/${id}/read`);
+export const getReports       = ()      => api.get('/reports/summary');
+export const getAdminOverview = ()      => api.get('/admin/overview');
+export const getAdminTx       = ()      => api.get('/admin/transactions');
+export const approveTx        = (id)    => api.patch(`/admin/transactions/${id}/approve`);
+export const blockTx          = (id)    => api.patch(`/admin/transactions/${id}/block`);
